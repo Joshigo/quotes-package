@@ -1,0 +1,31 @@
+{
+    "name": "joshigo/quotes-package",
+    "description": "A Laravel package to consume and manage quotes from the DummyJSON API, with rate limiting, caching and a Vue.js user interface.",
+    "type": "library",
+    "require": {
+        "laravel/framework": "^9.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Library\\QuotesPackage\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "joshigo",
+            "email": "hidalgojosemanuel59@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Library\\QuotesPackage\\Providers\\QuotesServiceProvider"
+            ]
+        }
+    }
+}
